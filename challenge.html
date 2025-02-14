@@ -29,6 +29,15 @@
         console.log(divide(10, 2));
         console.groupEnd('Arrow Function');
 
+        // Varsayılan Parametreler
+        function greetUser(name = 'Misafir', surname = '') {
+            return `Hoş geldin, ${name + surname}`
+        };
+        console.group('Varsayılan Parametreler');
+        console.log(greetUser());
+        console.log(greetUser('John Doe'));
+        console.groupEnd('Varsayılan Parametreler');
+
     </script>
 </body>
 
