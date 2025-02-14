@@ -15,13 +15,19 @@
         console.log(sayHello('Alice'));
         console.groupEnd('Function Declaration');
 
-        //Function Expression
+        // Function Expression
         const multiply = function (a, b) {
             return a * b
         }
         console.group('Function Expression');
         console.log(multiply(5, 3));
         console.groupEnd('Function Expression');
+
+        // Arrow Function
+        const divide = (a, b) => a / b;
+        console.group('Arrow Function');
+        console.log(divide(10, 2));
+        console.groupEnd('Arrow Function');
 
     </script>
 </body>
