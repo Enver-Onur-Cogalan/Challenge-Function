@@ -15,6 +15,14 @@
         console.log(sayHello('Alice'));
         console.groupEnd('Function Declaration');
 
+        //Function Expression
+        const multiply = function (a, b) {
+            return a * b
+        }
+        console.group('Function Expression');
+        console.log(multiply(5, 3));
+        console.groupEnd('Function Expression');
+
     </script>
 </body>
 
